@@ -1,0 +1,561 @@
+
+
+body {font-family: "Oswald";
+    
+}
+
+/*TITLE BAR*/
+
+#menu_bar{transition: top 0.2s ease-in-out;
+}
+.menu_bar{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+    line-height: .75;
+    z-index: 9999;
+}
+
+.menu_barSD{
+    position: fixed;
+    top:-40px;
+    left:0;
+    width:100%;
+    display:Flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+    line-height: .75;
+    z-index: 9999;
+}
+
+.menu{width: 100%;
+    background-color: #00982B;
+    text-align: center;
+    padding: 10px 0 30px 0;
+}
+
+#menu-list{display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50%;
+    padding:0;
+    list-style: none;
+    margin: 0 auto;
+    }
+
+#menu-list li a {
+    text-decoration: none; 
+}
+
+a:link {color: #ffffff;}
+a:visited {color: #FFFFFF;}
+a:hover {color: #FFC20E;}
+a:active {color: #FFC20E;}
+
+#title{z-index: 5000;
+    
+}
+#ssvg{width:60;
+    position: relative;
+    top:-15px;
+    border-radius:  0 0 60px 60px;
+    -moz-border-radius: 0 0 60px 60px;
+    -webkit-border-radius: 0 0 60px 60px;
+    background-color:#00982B;
+    -webkit-background-clip: border-box; 
+    -moz-background-clip: border; 
+    background-clip: border-box;
+}
+
+#menu_bar img{position:relative;
+    padding: 0 20px 10px 20px;
+    height:30px;
+
+}
+
+.jump:before {
+    display: block;
+    content: "";
+    height: 15px;
+    margin: -15px 0 0;
+}
+
+.jumper:before {
+    display: block;
+    content: "";
+    height: 15px;
+    margin: -15px 0 0;
+}
+
+/*TITLE*/
+
+.Title{
+    text-align: center;
+    font-family: "Oswald";
+    color: white;
+    text-shadow: 2px 2px black;
+    padding: 250px 0 20px 0;
+    margin: 55px auto 0;
+    background-color: #009fff;
+    background-image: url("Seph%20in%20HDR%20Egypt.jpg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 60vw, cover;
+    width: 100%;
+    font-size: 2.5vw;
+    line-height: 1;
+    transition: background 1s ease;
+
+}
+
+
+h1{margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h3{margin: 10px;
+}
+
+
+/*SECTION TITLES*/
+
+.sectiontitle{
+    width:100%;
+    text-align:center;   
+    font-size: 25px;
+    padding: 25px 0 10px 0;
+}
+
+.sectiontitle:before, .sectiontitle:after{
+    content:"";
+    vertical-align:middle;
+    display:inline-block;
+    width:100px;
+    border-bottom:2px solid /*#ff6600*/ #FFC20E;
+    margin:0 1% 0 -55%;
+}
+
+.sectiontitle:after{
+    margin:0 -55% 0 1%;
+}
+
+#projecttitle{background-color: #009fff;}
+
+
+/*About Me*/
+
+.about{margin: 0 auto;
+        width: 60%;
+        font-size: 20px;
+        height: auto;
+}
+
+.me{    display: inline-block;
+        float: right;
+        shape-outside: url(https://lh3.googleusercontent.com/lZKKnYcgz0LxceF7y3NZQdcH9uZEwMUKoavb7gWYhCo=w155-h207-p-no);
+        shape-image-threshold: 0;
+        width: 50%;
+}
+
+.about p{margin-top: 0;}
+
+.clear{clear:both;
+}
+
+
+
+
+/*Projects*/
+
+#projects{background-color:#009fff;
+}
+
+#content {margin: 0 auto;
+    align-content: center;
+    width:100%;
+}
+
+.item {display: inline-block;
+	float: left;
+	width: 300px;
+	margin: 0 20px 20px 0;
+    -webkit-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
+	-moz-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
+	-ms-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
+	-o-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
+	transition: left .4s ease-in-out, top .4s ease-in-out .4s;
+}
+
+.featured {
+	width: 620px;
+    
+}
+
+.height {
+    position: relative;
+    height: 200px;
+}
+
+.height img{position: absolute;
+    top: 50%;
+    margin-top: -55px;
+}
+
+.item img {
+	width: 100%;
+	height: auto;
+}
+
+.featured img {
+  width: 100%;
+  height: auto;
+}
+
+.expand{display: none;
+}
+
+
+/* Captions*/ 
+
+.caption{position: absolute;
+    top:10%;
+    width:90%;
+    margin:0 5%;
+    z-index: 8000;
+    color: white;
+    display: none;
+}
+
+
+.item .caption p:first-of-type{text-align: center;
+    font-size: 20px;
+    text-decoration: underline;
+    text-transform:uppercase;
+    text-indent: 0;
+    margin:0;
+}
+
+.item .caption p{text-indent: 1em;
+    text-align: justify;
+    margin-top:5px;
+}
+
+.item .caption ul{text-align: justify;
+    margin-top: 10px;
+}
+
+.item ul{list-style-position: inside;
+    list-style-type: disc;
+    padding: 0;
+    
+}
+
+.itemimg {filter: brightness(0.25);
+    -webkit-filter:brightness(0.25);
+    -moz-filter:brightness(0.25);
+}
+
+.item .main ul li{text-align: left;
+    width: 85%;
+    margin: 0 auto;
+    list-style: disc;
+}
+
+.item p span, .item ul span{text-transform: uppercase;
+    text-decoration:underline;
+    text-align: center;
+}
+
+
+
+/*Connect*/
+
+.connect {position: relative;
+    display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: baseline;
+            padding: 10px 0;
+            letter-spacing: 25px;
+            font-size: 20px;
+            background-color: #00982B;
+    
+}
+
+    
+/*Responsive Design*/
+@media screen and (max-width: 1020px) {
+.Title{background-size: 75vw, 300px;
+}
+.about{width: 75%;
+}    
+}
+
+@media screen and (max-width: 780px){
+.Title{background-size: 100vw, 300px;
+}
+.about{width: 100%;
+} 
+}
+
+@media screen and (max-width: 655px) {
+#menu_bar{font-size: 20px;
+}
+    
+#menu-list{width: 75%;
+    }
+
+.Title{
+    text-align: center;
+    font-family: "Oswald";
+    color: white;
+    text-shadow: 2px 2px black;
+    padding: 250px 0 20px 0;
+    margin: 55px auto 0;
+    background-color: #009fff;
+    background-image: url("Seph%20in%20HDR%20Egypt.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:cover, auto;
+    width: 100%;
+    font-size: 40px;
+    line-height: 1;
+}
+
+h1{font-size: 25px;
+}
+
+h3{font-size:20px;
+}
+
+.sectiontitle{   
+    font-size: 20px;
+}
+
+.sectiontitle:before, .sectiontitle:after{
+    width:75px;
+}
+
+.sectiontitle:after{
+    margin:0 -55% 0 1%;
+}
+
+.about{font-size:20px;
+    width: 100%;
+}
+
+.item{margin: 0;
+    min-width:0%;
+    width: 245px;
+    margin: 0 5px 5px 0;
+}
+    
+.featured {/*min-width: 100%;*/
+    width: 500px;
+}
+
+    
+/*.caption{text-align:left;
+    position:relative;
+    vertical-align: middle;
+    top:100%;
+    width: 100%;
+    margin: 0 0%;
+    padding: 0;
+    transform:none;
+    -webkit-transform:none;
+    list-style-position:inside;
+    display:none;
+    font-size: 15px;
+    background-color: rgba(255,102,0, 1)
+}*/
+
+    .caption{
+        position: absolute;
+    top:10%;
+    width:96%;
+    margin:0 2%;
+    vertical-align: middle;
+    font-size:2.5vw;
+}
+    .cap{top:0;}
+
+
+@media screen and (max-width: 515px) {
+.connect{margin-top:0;
+    widows: 100%;
+}
+
+    
+.bx-wrapper {
+	position: relative;
+	margin: 0 auto;
+	padding: 0 auto;
+	*zoom: 1;
+    width:100%;
+    max-height: 600;
+}
+
+.bx-wrapper img {
+	margin:0 auto;
+	display: block;
+    height: auto;
+    min-height: 400;
+    max-height: 600;
+    width: 100%;
+}
+
+#cap {position:absolute;
+    width:90%;
+    margin: 0 5%;
+    top:0;
+    height: auto;
+    z-index: 9900;
+    display: none;
+    color: white;
+    font-size:3.5vw;
+}
+
+.caption{position:absolute;
+    width:90%;
+    margin: 0 5%;
+    height: auto;
+    z-index: 8000;
+    color: white;
+    top:20%;
+    overflow-y:visible;
+    font-size:16px;
+}
+
+.cap{top:5%;}
+
+.fa-plus{position:absolute;
+    padding-left: 5%;
+    transform: translateY(10px);
+    color: white;
+    z-index: 9000;
+    font-size: 5em;
+}
+
+.fa-times{position:absolute;
+    bottom:0;
+    transform: translate(0, 10px);
+    color: white;
+    z-index: 9005;
+    display: none;
+    right:0;
+}
+
+.expand{position:relative;
+    display: inline;
+}
+
+.itemimg {filter: brightness(0.25);
+    -webkit-filter:brightness(0.25);
+    -moz-filter:brightness(0.25);
+}
+
+.item img{
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+}*/
+
+
+/** THEME
+===================================*/
+
+.bx-wrapper .bx-viewport {
+
+	
+	left: 0;
+	background: #009fff;
+    /*overflow:hidden;*/
+	
+	/*fix other elements on the page moving (on Chrome)*/
+	-webkit-transform: translatez(0);
+	-moz-transform: translatez(0);
+    	-ms-transform: translatez(0);
+    	-o-transform: translatez(0);
+    	transform: translatez(0);
+}
+
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+    background: #009fff;
+}
+
+/* PAGER */
+
+.bx-wrapper .bx-pager {
+    
+	text-align: center;
+	font-size: .85em;
+	font-family: Arial;
+	font-weight: bold;
+	color: #666;
+	background: none;
+    z-index: 9999;
+}
+
+.bx-wrapper .bx-pager .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+	background: /*#666*/white;
+	text-indent: -9999px;
+	display: block;
+	width: 10px;
+	height: 10px;
+	margin: 10px 5px;
+	
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+	background: #FFC20E;
+}
+
+/* DIRECTION CONTROLS (NEXT / PREV) */
+
+.bx-wrapper .bx-prev {
+	left:10%;    
+}
+
+.bx-wrapper .bx-next {
+	right: 10%;
+	
+}
+
+.bx-wrapper .bx-controls-direction a {
+	position: absolute;
+	bottom:5px;
+	margin-top: 0;
+	outline: 0;
+	width: 20px;
+	height: 20px;
+	text-indent: -9999px;
+	z-index: 9999;
+}
+
+.bx-wrapper .bx-controls-direction a.disabled {
+	display: none;
+}
+    
+    }
