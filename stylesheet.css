@@ -1,7 +1,7 @@
 
 
 body {font-family: "Oswald";
-    
+    text-rendering: optimizeLegibility;
 }
 
 /*TITLE BAR*/
@@ -13,8 +13,14 @@ body {font-family: "Oswald";
     top:0;
     left:0;
     width:100%;
+    display: -webkit-box;
+    display: -webkit-flex;
     display:flex;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
     align-items: center;
     font-size: 25px;
     line-height: .75;
@@ -26,8 +32,14 @@ body {font-family: "Oswald";
     top:-40px;
     left:0;
     width:100%;
+    display: -webkit-box;
+    display: -webkit-flex;    
     display:Flex;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;    
     flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;    
     align-items: center;
     font-size: 25px;
     line-height: .75;
@@ -40,8 +52,11 @@ body {font-family: "Oswald";
     padding: 10px 0 30px 0;
 }
 
-#menu-list{display: flex;
-    flex-direction: row;
+#menu-list{
+    display: -webkit-box;
+    display: flex;
+    flex-direction: row;  
+    -webkit-box-pack: justify;
     justify-content: space-around;
     width: 50%;
     padding:0;
@@ -61,7 +76,7 @@ a:active {color: #FFC20E;}
 #title{z-index: 5000;
     
 }
-#ssvg{width:60;
+#ssvg{width:60px;
     position: relative;
     top:-15px;
     border-radius:  0 0 60px 60px;
@@ -277,18 +292,27 @@ h3{margin: 10px;
 /*Connect*/
 
 .connect {position: relative;
-    display: flex;
+    /*display: flex;*/
             width: 100%;
-            justify-content: center;
+            /*justify-content: center;*/
             align-items: baseline;
             padding: 10px 0;
-            letter-spacing: 25px;
+            letter-spacing: 20px;
             font-size: 20px;
             background-color: #00982B;
+            text-align: center;
     
 }
 
-    
+#optimized {background-color: #00982B;
+            color: white;
+            font-size: 15px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 10px 0;
+}
+
+
 /*Responsive Design*/
 @media screen and (max-width: 1020px) {
 .Title{background-size: 75vw, 300px;
